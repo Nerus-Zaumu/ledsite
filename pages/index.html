@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED</title>
+    <link rel="icon" href="../logo-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/mediaQuery.css">
+    <script src="https://kit.fontawesome.com/b849139045.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar show-sidebar" id="side">
+            <div class="top logo">
+                <span tabindex="1" onclick="closeSidebar('side', 'hide-sidebar', 'show-sidebar')" id="side"><i class="fa-solid fa-bars"></i></span>
+                <img src="../assets/images/logo.jpg" alt="Logo">
+            </div>
+            <div class="sidebar-links">
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('sidebar-one', 'sidebar-list', 'sidebar-hide')">Home</a>
+                    <div class="dropdown-hide" id="sidebar-one">
+                        <a href="#">Mission</a>
+                        <a href="#">Programs</a>
+                        <a href="#">Donate</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Calls to engage</a>
+                        <a href="#">News</a>
+                        <a href="#">SDG tackling</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('sidebar-two', 'sidebar-list', 'sidebar-hide')">Who we are</a>
+                    <div class="dropdown-hide" id="sidebar-two">
+                        <a href="#">History</a>
+                        <a href="#">Mission</a>
+                        <a href="#">Vision</a>
+                        <a href="#">Values</a>
+                        <a href="#">Team</a>
+                        <a href="#">Partners</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('sidebar-three', 'sidebar-list', 'sidebar-hide')">What we do</a>
+                    <div class="dropdown-hide" id="sidebar-three">
+                        <a href="#">Programs</a>
+                        <a href="#">Be a cummunity leader</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('sidebar-four', 'sidebar-list', 'sidebar-hide')">How you can engage</a>
+                    <div class="dropdown-hide" id="sidebar-four">
+                        <a href="#">Donate</a>
+                        <a href="#">Leader in Community</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Volunteer</a>
+                        <a href="#">Internships</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('sidebar-five', 'sidebar-list', 'sidebar-hide')">Updates</a>
+                    <div class="dropdown-hide" id="sidebar-five">
+                        <a href="#">On the News</a>
+                        <a href="#">Annual Reports</a>
+                        <a href="#">Blog Posts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="navbar">
+                <div class="brand logo">
+                    <span onclick="closeSidebar('side', 'hide-sidebar', 'show-sidebar')"><i class="fa-solid fa-bars"></i></span>
+                    <img src="../assets/images/logo.jpg" alt="Logo">
+                </div>
+                <div class="nav-links">
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('dropdown-one', 'dropdown-list', 'dropdown-hide')">Home&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-one">
+                            <a href="#">Mission</a>
+                            <a href="#">Programs</a>
+                            <a href="#">Donate</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Calls to engage</a>
+                            <a href="#">News</a>
+                            <a href="#">SDG tackling</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('dropdown-two', 'dropdown-list', 'dropdown-hide')">Who we are&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-two">
+                            <a href="#">History</a>
+                            <a href="#">Mission</a>
+                            <a href="#">Vision</a>
+                            <a href="#">Values</a>
+                            <a href="#">Team</a>
+                            <a href="#">Partners</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('dropdown-three', 'dropdown-list', 'dropdown-hide')">What we do&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-three">
+                            <a href="#">Programs</a>
+                            <a href="#">Be a cummunity leader</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('dropdown-four', 'dropdown-list', 'dropdown-hide')">How you can engage&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-four">
+                            <a href="#">Donate</a>
+                            <a href="#">Leader in Community</a>
+                            <a href="#">Jobs</a>
+                            <a href="#">Volunteer</a>
+                            <a href="#">Internships</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('dropdown-five', 'dropdown-list', 'dropdown-hide')">Updates&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-five">
+                            <a href="#">On the News</a>
+                            <a href="#">Annual Reports</a>
+                            <a href="#">Blog Posts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="other">
+                    <button type="button">Donate</button>
+                </div>
+            </div>
+            <div class="site-body">
+
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/navigation.js"></script>
+</body>
+</html>
