@@ -1,3 +1,23 @@
+@media(max-width: 975px){
+    .site-body   .news > div{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2fr;
+    }
+}
+
+@media(max-width: 930px){
+    .site-body .impact .impact-item{
+        width: 45%;
+    }
+    
+    .site-body .sdg .sdg-imgs > img{
+       width: 30%;
+       margin-bottom: 20px;
+    }
+
+}
+
 @media(max-width: 872px) {
     .navbar .brand span{
         display: block;
@@ -17,4 +37,70 @@
     .sidebar{
         display: none;
     }
+}
+
+@media(max-width: 851px){
+    .content .site-body .home{
+        background-size: auto;
+    }
+}
+
+@media(max-width: 630px){
+    .site-body .impact .impact-item{
+        width: 90%;
+    }
+}
+
+
+@media(max-width: 610px){
+    .sidebar{
+        width: 60%;
+    }
+}
+
+@media(max-width: 450px){
+    .sidebar{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width: 1220px){
+    .site-body .cameroon-impact .item{
+        width: 40%;
+    }
+
+    .site-body .cameroon-impact .item .item-head{
+        height: 450px;
+    }
+
+}
+
+@media(max-width: 988px){
+    .site-body .cameroon-impact .item{
+        width: 90%;
+    }
+
+    .site-body .cameroon-impact .item .item-head{
+        width: 50%;
+        height: 400px;
+    }
+}
+
+@media(max-width: 650px){
+    .site-body .cameroon-impact .item .item-head{
+        width: 90%;
+    }
+}
+
+@media(max-width: 541px){
+    .site-body .sdg .sdg-imgs > img{
+        width: 40%;
+     }
+}
+
+@media(max-width: 430px){
+    .site-body .sdg .sdg-imgs > img{
+        width: 80%;
+     }
 }

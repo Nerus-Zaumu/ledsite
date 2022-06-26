@@ -1,0 +1,170 @@
+/* Global Variable Declaration */
+:root{
+    --primaryColor: #67208C;
+    --secondaryColor: #757776;
+}
+
+.site-body{
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.site-body .home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    background-image: url('../assets/images/banner.jpg');
+    background-size: cover;
+}
+
+h1{
+    color: white;
+}
+
+mark{
+    background-color: transparent;
+    color: yellow;
+}
+
+.transform{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: var(--primaryColor);
+    font-weight: bold;
+}
+
+.transform h1{
+    color: var(--primaryColor);
+    font-size: 250%;
+}
+
+
+.transform h2{
+    font-style: italic;
+}
+
+.transform p{
+    font-size: 150%;
+}
+
+.impact, .cameroon-impact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.impact > .impact-item, .item{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.impact > .impact-item > .impact-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.img img{
+    object-fit: cover;
+}
+
+.impact > .impact-item > .impact-content h1{
+    color: turquoise;
+    text-align: center;
+}
+
+
+.cameroon-impact .item-head{
+    font-size: 1.2rem;
+    border-radius: 100%;
+    width: 100%;
+    height: 330px;
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.item-content ul li{
+    color: turquoise;
+    font-size: 1.2rem;
+    line-height: 100%;
+}
+
+.engage{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#en{
+    color: var(--primaryColor);
+    font-size: 2.5rem;
+}
+
+.news{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.news > div{
+    width: 40%;
+    margin: auto;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.news h1{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.sdg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sdg-head, .sdg-top{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.sdg-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sdg-imgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sdg-imgs img{
+    width: 18%;
+    margin: auto;
+}

@@ -8,11 +8,12 @@
     <link rel="icon" href="../logo-icon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../styles/index.css">
     <link rel="stylesheet" type="text/css" href="../styles/mediaQuery.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home.css">
     <script src="https://kit.fontawesome.com/b849139045.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <div class="sidebar show-sidebar" id="side">
+        <div class="sidebar hide-sidebar" id="side">
             <div class="top logo">
                 <span tabindex="1" onclick="closeSidebar('side', 'hide-sidebar', 'show-sidebar')" id="side"><i class="fa-solid fa-bars"></i></span>
                 <img src="../assets/images/logo.jpg" alt="Logo">
@@ -21,13 +22,13 @@
                 <div class="sidebar-item">
                     <a href="#" onclick="showAndHideDropdown('sidebar-one', 'sidebar-list', 'sidebar-hide')">Home</a>
                     <div class="dropdown-hide" id="sidebar-one">
-                        <a href="#">Mission</a>
+                        <a href="#mission">Mission</a>
                         <a href="#">Programs</a>
                         <a href="#">Donate</a>
                         <a href="#">Contact</a>
-                        <a href="#">Calls to engage</a>
-                        <a href="#">News</a>
-                        <a href="#">SDG tackling</a>
+                        <a href="#engage">Calls to engage</a>
+                        <a href="#news">News</a>
+                        <a href="#sdg">SDG tackling</a>
                     </div>
                 </div>
                 <div class="sidebar-item">
@@ -78,13 +79,13 @@
                     <div class=" nav-item">
                         <a href="#" onclick="showAndHideDropdown('dropdown-one', 'dropdown-list', 'dropdown-hide')">Home&nbsp;&nbsp;&nbsp;|</a>
                         <div class="dropdown-hide" id="dropdown-one">
-                            <a href="#">Mission</a>
+                            <a href="#mission">Mission</a>
                             <a href="#">Programs</a>
                             <a href="#">Donate</a>
                             <a href="#">Contact</a>
-                            <a href="#">Calls to engage</a>
-                            <a href="#">News</a>
-                            <a href="#">SDG tackling</a>
+                            <a href="#engage">Calls to engage</a>
+                            <a href="#news">News</a>
+                            <a href="#sdg">SDG tackling</a>
                         </div>
                     </div>
                     <div class=" nav-item">
@@ -129,7 +130,151 @@
                 </div>
             </div>
             <div class="site-body">
-
+                <div class="home" id="topmost">
+                    <h1>No <mark>to economic dependence</mark></h1>
+                    <h1>NO <mark>to gender based violence</mark></h1>
+                    <h1>No <mark>to teenage pregnancy</mark></h1>
+                    <h1>No <mark>to truncated education</mark></h1>
+                    <h1>No <mark>girl left behind due to lack of pad</mark></h1>
+                </div>
+                <div class="transform" id="mission">
+                    <h1>Transforming the world</h1>
+                    <h2>One woman, one girl at a time</h2>
+                    <p>We have a mission to positively  transform communities by empowering women and girls</p>
+                </div>
+                <div class="impact" id="impact">
+                    <div class="impact-item">
+                        <div class="impact-img img">
+                            <img src="../assets/images/education.jpg" alt="Impact Image">
+                        </div>
+                        <div class="impact-content">
+                            <h1>Education for all</h1>
+                            <p>
+                                We organise campaigns aimed at
+                                keeping girls in school. We also
+                                organise training courses with
+                                women. The course areas of focus
+                                include communication, leadership
+                                skills, finance management, negotiation skills,
+                                use of social media, branding and networking
+                            </p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-img img">
+                            <img src="../assets/images/womenEmpowerment.jpeg" alt="Impact Image">
+                        </div>
+                        <div class="impact-content">
+                            <h1>Women economic empowerment</h1>
+                            <p>Created in 2019, LED is a non-profit, non-governmental organization
+                                in Cameroon that is aimed at empowering women and girls to become active players
+                                in nation building through innovative capacity building strategies.
+                                We believe that when you empower a woman, you empower a nation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-img img">
+                            <img src="../assets/images/capacity.jpg" alt="Impact Image">
+                        </div>
+                        <div class="impact-content">
+                            <h1>Capacity building trainings</h1>
+                            <p>LED objective is building capacity for
+                                women and girls creating a ripple effect
+                                of women empowering others to
+                                become economically independent.
+                                Helping women overcome financial
+                                dependency helps curb gender based
+                                violence, poverty, encourage education
+                                and good health.</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 style="color: #30D5C8; text-align: center; font-size: 2.5rem">Our Impact in Cameroon</h1>
+                <div class="cameroon-impact">
+                    <div class="item">
+                        <div class="item-head">
+                            <h1>5</h1>
+                            <h1>REGIONS</h1>
+                        </div>
+                        <div class="item-content">
+                            <ul>
+                                <li>Bafoussam, West Region</li>
+                                <li>Yaounde, Centre Region</li>
+                                <li>Douala, Littoral Region</li>
+                                <li>Bamenda, North West Region</li>
+                                <li>muock Leteh, South West Region</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-head">
+                            <h1>25</h1>
+                            <h1>PEOPLE IMPACTED DIRECTLY</h1>
+                        </div>
+                        <div class="item-content">
+                            <ul>
+                                <li>20 Women capacity building</li>
+                                <li>20 Men/Women on Covid</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-head">
+                            <h1>2</h1>
+                            <h1>PROGRAMS</h1>
+                        </div>
+                        <div class="item-content">
+                            <ul>
+                                <li>Women training</li>
+                                <li>Covid and care sensitisation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="engage" id="engage">
+                    <h1 style="color: rgb(19, 117, 19); font-weight: bold;">Engage with us</h1>
+                    <h1 id="en">Do you want to join us in this journey to empower women and girls?</h1>
+                    <ul>
+                        <li style="color: turquoise; font-size: 1.5rem">Become a community leader</li>
+                        <li style="color: turquoise; font-size: 1.5rem">Donate to our cause</li>
+                    </ul>
+                </div>
+                <h1>We are on the news</h1>
+                <div class="news" id="news">
+                    <div class="left-news">
+                        <h1>Empower a woman; you Empower a Nation</h1>
+                        <p>Leteh Empowering Daughters (LED), created in March 2019 with
+                            the motto unity -commitment-transformation, is a non profit and
+                            apolitical organization. As its objectives, LED stands out to 
+                        promote female, education, women and girls empowerment, through 
+                    capacity building, gender balance, health programs through sensitisation, community
+                 and sustainable development programs</p>
+                 <a href="https://web.facebook.com/dailechoes/posts/279457203714210">Read more</a>
+                    </div>
+                    <div class="right-news">
+                        <h1>Empowering messages from Leteh Empowering Daughters(LED)</h1>
+                        <p>Empowering messages from Leteh Empowering Daughters(LED). You can't 
+                            afford to miss this video.
+                        </p>
+                        <a href="https://web.facebook.com/107239447507749/videos/2194378665981">Watch</a>
+                    </div>
+                </div>
+                <div class="sdg" id="sdg">
+                    <div class="sdg-top">
+                        <img src="../assets/images/logo1.jpg" alt="SDG Logo">
+                    </div>
+                    <div class="sdg-head">
+                        <h1>We are talking</h1>
+                    </div>
+                    <div class="sdg-imgs">
+                        <img src="../assets/images/goal1.jpg" alt="Goal One">
+                        <img src="../assets/images/goal2.jpg" alt="Goal Two">
+                        <img src="../assets/images/goal3.jpg" alt="Goal Three">
+                        <img src="../assets/images/goal4.jpg" alt="Goal Four">
+                        <img src="../assets/images/goal5.jpg" alt="Goal Five">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

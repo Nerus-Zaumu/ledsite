@@ -5,7 +5,7 @@ let dropdownHideClone;
 
 function showAndHideDropdown(dropdownEl, show, hide){
     list = document.getElementById(dropdownEl).classList
-    linkClone = list
+    linkClone = dropdownEl
     dropdownStyleClone = show
     dropdownHideClone = hide
     list.toggle(show)
@@ -13,9 +13,11 @@ function showAndHideDropdown(dropdownEl, show, hide){
 }
 
 // document.addEventListener('click', (event) => {
-//     if(event.target != linkClone){
-//         linkClone.remove(dropdownStyleClone)
-//         linkClone.add(dropdownHideClone)
+//     if(!event.target.matches(linkClone)){
+//         newList = document.getElementById(linkClone).classList
+//         if(newList.contains())
+//         newList.remove(dropdownStyleClone)
+//         newList.add(dropdownHideClone)
 //         console.log(linkClone)
 //     }
 // })
