@@ -4,9 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/mediaQuery.css">
+    <link rel="stylesheet" href="../styles/who.css">
+    <script src="../javascript/navigation.js" defer></script>
+    <script src="../javascript/executive.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Italianno">
     <title>LED</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="sidebar hide-sidebar" id="side">
+            <div class="top logo">
+                <span tabindex="1" onclick="closeSidebar('side', 'hide-sidebar', 'show-sidebar')" id="side"><i class="fa-solid fa-bars"></i></span>
+                <img src="../assets/images/logo.jpg" alt="Logo">
+            </div>
+            <div class="sidebar-links">
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('home1', 'sidebar-one', 'sidebar-list', 'sidebar-hide')" id="home1">Home</a>
+                    <div class="dropdown-hide" id="sidebar-one">
+                        <a href="#mission">Mission</a>
+                        <a href="#">Programs</a>
+                        <a href="#">Donate</a>
+                        <a href="#">Contact</a>
+                        <a href="#engage">Calls to engage</a>
+                        <a href="#news">News</a>
+                        <a href="#sdg">SDG tackling</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('who1', 'sidebar-two', 'sidebar-list', 'sidebar-hide')" id="who1">Who we are</a>
+                    <div class="dropdown-hide" id="sidebar-two">
+                        <a href="#">History</a>
+                        <a href="#">Mission</a>
+                        <a href="#">Vision</a>
+                        <a href="#">Values</a>
+                        <a href="#">Team</a>
+                        <a href="#">Partners</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('what1', 'sidebar-three', 'sidebar-list', 'sidebar-hide')" id="what1">What we do</a>
+                    <div class="dropdown-hide" id="sidebar-three">
+                        <a href="#">Programs</a>
+                        <a href="#">Be a cummunity leader</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('engage1', 'sidebar-four', 'sidebar-list', 'sidebar-hide')" id="engage1">How you can engage</a>
+                    <div class="dropdown-hide" id="sidebar-four">
+                        <a href="#">Donate</a>
+                        <a href="#">Leader in Community</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Volunteer</a>
+                        <a href="#">Internships</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('update1', 'sidebar-five', 'sidebar-list', 'sidebar-hide')" id="update1">Updates</a>
+                    <div class="dropdown-hide" id="sidebar-five">
+                        <a href="#">On the News</a>
+                        <a href="#">Annual Reports</a>
+                        <a href="#">Blog Posts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="navbar">
+                <div class="brand logo">
+                    <span onclick="closeSidebar('side', 'hide-sidebar', 'show-sidebar')"><i class="fa-solid fa-bars"></i></span>
+                    <img src="../assets/images/logo.jpg" alt="Logo">
+                </div>
+                <div class="nav-links">
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('home', 'dropdown-one', 'dropdown-list', 'dropdown-hide')" id="home">Home&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-one">
+                            <a href="#mission">Mission</a>
+                            <a href="#">Programs</a>
+                            <a href="#">Donate</a>
+                            <a href="#">Contact</a>
+                            <a href="#engage">Calls to engage</a>
+                            <a href="#news">News</a>
+                            <a href="#sdg">SDG tackling</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('who', 'dropdown-two', 'dropdown-list', 'dropdown-hide')" id="who">Who we are&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-two">
+                            <a href="#">History</a>
+                            <a href="#">Mission</a>
+                            <a href="#">Vision</a>
+                            <a href="#">Values</a>
+                            <a href="#">Team</a>
+                            <a href="#">Partners</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('what', 'dropdown-three', 'dropdown-list', 'dropdown-hide')" id="what">What we do&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-three">
+                            <a href="#">Programs</a>
+                            <a href="#">Be a cummunity leader</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('engage', 'dropdown-four', 'dropdown-list', 'dropdown-hide')" id="engage">How you can engage&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-four">
+                            <a href="#">Donate</a>
+                            <a href="#">Leader in Community</a>
+                            <a href="#">Jobs</a>
+                            <a href="#">Volunteer</a>
+                            <a href="#">Internships</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('update', 'dropdown-five', 'dropdown-list', 'dropdown-hide')" id="update">Updates&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-five">
+                            <a href="#">On the News</a>
+                            <a href="#">Annual Reports</a>
+                            <a href="#">Blog Posts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="other">
+                    <button type="button">Donate</button>
+                </div>
+            </div>
+            <div class="who-content">
+                <div class="history">
+                    <div class="history-content">
+                        <h1>History</h1>
+                        <p>Created in 2019, LED is a non-profit, non-governmental
+                            organization in Cameroon that is aimed at empowering
+                            women and girls to become active players in nation
+                            building through innovative capacity building strategies. We
+                            believe that when you empower a woman, you empower a
+                            nation.</p>
+                            <p>LED objective is building capacity for women and girls creating
+                                a ripple effect of women empowering others to become economically
+                                 independent. Helping women overcome financial dependency helps curb 
+                                 gender based violence, poverty, encourage education and good health
+                            </p>
+                    </div>
+                    <div class="history-image image">
+                        <img src="../assets/images/history.jpg" alt="LED women together">
+                    </div>
+                </div>
+                <div class="mision-values">
+                    <div class="mission">
+                        <h1>Mission</h1>
+                        <p>To positively transform
+                            communities by empowering
+                            women and girls.</p>
+                    </div>
+                    <div class="vision">
+                        <h1>Vision</h1>
+                        <p>To achieve sustainable development in communities
+                             by empowering women and girls and engage them to actively 
+                             play a role in dialogues concerning their welfare
+                        </p>
+                    </div>
+                    <div class="values">
+                        <h1>Values</h1>
+                        <ul>
+                            <li>Inclusion</li>
+                            <li>Development</li>
+                            <li>Equality</li>
+                            <li>Integrity</li>
+                            <li>Respect</li>
+                            <li>Leadership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="executive" id="executives">
+                <div class="exec">
+                    <div class="exec-img">
+                        <img src="../assets/images/Pisoh.jpg" alt="Pisoh">
+                    </div>
+                    <div class="exec-info">
+                        <h1>Rachel Piso</h1>
+                        <h2>Banking Professional</h2>
+                    </div>
+                </div>
+                <div class="exec">
+                    <div class="exec-img">
+                        <img src="../assets/images/Pisoh.jpg" alt="Pisoh">
+                    </div>
+                    <div class="exec-info">
+                        <h1>Rachel Piso</h1>
+                        <h2>Banking Professional</h2>
+                    </div>
+                </div>
+                <div class="exec">
+                    <div class="exec-img">
+                        <img src="../assets/images/Pisoh.jpg" alt="Pisoh">
+                    </div>
+                    <div class="exec-info">
+                        <h1>Rachel Piso</h1>
+                        <h2>Banking Professional</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -18,6 +18,14 @@
 
 }
 
+@media(max-width: 899px){
+    .who-content > .executive > div {
+        background-color: yellow;
+        width: 45%;
+        margin: auto;
+    }
+}
+
 @media(max-width: 872px) {
     .navbar .brand span{
         display: block;
@@ -29,6 +37,15 @@
 
     .navbar > .nav-links{
         display: none;
+    }
+
+    .who-content > .history{
+        flex-direction: column;
+    }
+
+    .who-content > .history > div{
+        width: 90%;
+        margin: auto;
     }
 
 }
@@ -55,6 +72,14 @@
 @media(max-width: 610px){
     .sidebar{
         width: 60%;
+    }
+
+    .who-content > .mision-values{
+        flex-direction: column;
+    }
+
+    .who-content > .mision-values > div{
+        width: 90%;
     }
 }
 
