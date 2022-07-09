@@ -4,9 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../logo-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/engage.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/mediaQuery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Italianno">
+    <script src="../javascript/navigation.js" defer></script>
     <title>LED</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="sidebar hide-sidebar" id="side">
+            <div class="top logo">
+                <span tabindex="1" onclick="closeSidebar('side', 'hide-sidebar', 'show-sidebar')" id="side"><i class="fa-solid fa-bars"></i></span>
+                <img src="../assets/images/logo.jpg" alt="Logo">
+            </div>
+            <div class="sidebar-links">
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('home1', 'sidebar-one', 'sidebar-list', 'sidebar-hide')" id="home1">Home</a>
+                    <div class="dropdown-hide" id="sidebar-one">
+                        <a href="#mission">Mission</a>
+                        <a href="#">Programs</a>
+                        <a href="#">Donate</a>
+                        <a href="#">Contact</a>
+                        <a href="#engage">Calls to engage</a>
+                        <a href="#news">News</a>
+                        <a href="#sdg">SDG tackling</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('who1', 'sidebar-two', 'sidebar-list', 'sidebar-hide')" id="who1">Who we are</a>
+                    <div class="dropdown-hide" id="sidebar-two">
+                        <a href="#history">History</a>
+                        <a href="#mission-values">Mission</a>
+                        <a href="#vision">Vision</a>
+                        <a href="#values">Values</a>
+                        <a href="#executives">Team</a>
+                        <a href="#partners-sect">Partners</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('what1', 'sidebar-three', 'sidebar-list', 'sidebar-hide')" id="what1">What we do</a>
+                    <div class="dropdown-hide" id="sidebar-three">
+                        <a href="#">Programs</a>
+                        <a href="#">Be a cummunity leader</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('engage1', 'sidebar-four', 'sidebar-list', 'sidebar-hide')" id="engage1">How you can engage</a>
+                    <div class="dropdown-hide" id="sidebar-four">
+                        <a href="#">Donate</a>
+                        <a href="#">Leader in Community</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Volunteer</a>
+                        <a href="#">Internships</a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" onclick="showAndHideDropdown('update1', 'sidebar-five', 'sidebar-list', 'sidebar-hide')" id="update1">Updates</a>
+                    <div class="dropdown-hide" id="sidebar-five">
+                        <a href="#">On the News</a>
+                        <a href="#">Annual Reports</a>
+                        <a href="#">Blog Posts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="navbar">
+                <div class="brand logo">
+                    <span onclick="closeSidebar('side', 'hide-sidebar', 'show-sidebar')"><i class="fa-solid fa-bars"></i></span>
+                    <img src="../assets/images/logo.jpg" alt="Logo">
+                </div>
+                <div class="nav-links">
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('home', 'dropdown-one', 'dropdown-list', 'dropdown-hide')" id="home">Home&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-one">
+                            <a href="#mission">Mission</a>
+                            <a href="#">Programs</a>
+                            <a href="#">Donate</a>
+                            <a href="#">Contact</a>
+                            <a href="#engage">Calls to engage</a>
+                            <a href="#news">News</a>
+                            <a href="#sdg">SDG tackling</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('who', 'dropdown-two', 'dropdown-list', 'dropdown-hide')" id="who">Who we are&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-two">
+                            <a href="#history">History</a>
+                            <a href="#mission-values">Mission</a>
+                            <a href="#vision">Vision</a>
+                            <a href="#values">Values</a>
+                            <a href="#executives">Team</a>
+                            <a href="#partners-sect">Partners</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('what', 'dropdown-three', 'dropdown-list', 'dropdown-hide')" id="what">What we do&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-three">
+                            <a href="#">Programs</a>
+                            <a href="#">Be a cummunity leader</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('engage', 'dropdown-four', 'dropdown-list', 'dropdown-hide')" id="engage">How you can engage&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-four">
+                            <a href="#">Donate</a>
+                            <a href="#">Leader in Community</a>
+                            <a href="#">Jobs</a>
+                            <a href="#">Volunteer</a>
+                            <a href="#">Internships</a>
+                        </div>
+                    </div>
+                    <div class=" nav-item">
+                        <a href="#" onclick="showAndHideDropdown('update', 'dropdown-five', 'dropdown-list', 'dropdown-hide')" id="update">Updates&nbsp;&nbsp;&nbsp;|</a>
+                        <div class="dropdown-hide" id="dropdown-five">
+                            <a href="#">On the News</a>
+                            <a href="#">Annual Reports</a>
+                            <a href="#">Blog Posts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="other">
+                    <button type="button">Donate</button>
+                </div>
+            </div>
+            <div class="engage-body">
+                <h1>HOW YOU CAN ENGAGE</h1>
+                <div class="donate-here">
+                    <button>Donate</button>
+                    <div class="momo">
+                        <h1>MOMO</h1>
+                        <form>
+                            <div class="network">
+                                <select name="network" id="network">
+                                    <option value="Select network">Select Network</option>
+                                    <option value="MTN">MTN</option>
+                                    <option value="ORANGE">ORANGE</option>
+                                </select>
+                            </div>
+                           <div class="tel">
+                            <input type="text" id="tel" placeholder="@6777777777">
+                           </div>
+                           <div class="amount">
+                            <input type="text" id="amount" placeholder="@25000">
+                           </div>
+                            <button type="button">Donate</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <h1>ADDRESS</h1>
+            <p>Ndobo, Bonaberi</p>
+            <p>Douala, Cameroon</p>
+            <br>
+            <h1>CONTACT US</h1>
+            <p>Tel/Whatsapp: +237 671 106 398</p>
+            <!-- <a href="hello@led.mmuock.org" target="_blank">EMAIL: hello@led.mmuock.org</a> -->
+            <address>hello@led.mmuock.org</address>
+        </div>
+        <div class="foot">
+            <h2>Who we are</h2>
+            <ul>
+                <li><a href="">History</a></li>
+                <li><a href="">Mission</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Partners</a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <h2>What we do</h2>
+            <ul>
+                <li><a href="">Programs</a></li>
+                <li><a href="">Be a community leader</a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <h2>How you can engage</h2>
+            <ul>
+                <li><a href="">Donate</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Leader in community</a></li>
+                <li><a href="">Internships</a></li>
+                <li><a href="">Vulonteer</a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <h2>Updates</h2>
+            <ul>
+                <li><a href="">On the news</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">Events Galleries</a></li>
+                <li><a href="">Internships</a></li>
+                <li><a href="">Vulonteer</a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <button>Donate</button>
+        </div>
+    </footer>
 </body>
 </html>

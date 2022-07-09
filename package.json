@@ -1,0 +1,20 @@
+{
+  "name": "ledsite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nerus-Zaumu/ledsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nerus-Zaumu/ledsite/issues"
+  },
+  "homepage": "https://github.com/Nerus-Zaumu/ledsite#readme",
+  "description": ""
+}

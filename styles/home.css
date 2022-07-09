@@ -4,6 +4,13 @@
     --secondaryColor: #757776;
 }
 
+body{
+    width: 100vw;
+    height: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
 .site-body{
     width: 100%;
     height: 100%;

@@ -17,14 +17,32 @@
     }
 
 }
-
-@media(max-width: 899px){
-    .who-content > .executive > div {
-        background-color: yellow;
+@media(max-width: 1080px){
+    .programs > .program{
         width: 45%;
-        margin: auto;
     }
 }
+
+@media(max-width: 700px){
+    .programs > .program{
+        width: 90%;
+    }
+}
+ 
+/* @media(max-width: 899px){
+    .executive > .exec {
+          width: 40vw;
+          margin: auto;
+      }
+  }
+ 
+  @media(max-width: 499px){
+    .executive > .exec {
+          width: 90vw;
+          margin: auto;
+      }
+  } */
+ 
 
 @media(max-width: 872px) {
     .navbar .brand span{
@@ -128,4 +146,36 @@
     .site-body .sdg .sdg-imgs > img{
         width: 80%;
      }
+}
+
+@media(max-width: 1180px){
+    footer div{
+        width: 30%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 900px){
+    footer div{
+        width: 45%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 546px){
+    footer div{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 917px){
+    .momo{
+        width: 90%;
+        height: 100%;
+    }
+
+    .momo > form{
+        margin-top: 12%;
+    }
 }
